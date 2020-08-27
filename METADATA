@@ -1,4 +1,4 @@
-name: proc-macro-error
+name: "proc-macro-error"
 description: "Almost drop-in replacement to panics in proc-macros"
 third_party {
   url {
@@ -6,8 +6,8 @@ third_party {
     value: "https://crates.io/crates/proc-macro-error"
   }
   url {
-    type: GIT
-    value: "https://gitlab.com/CreepySkeleton/proc-macro-error"
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/proc-macro-error/proc-macro-error-1.0.2.crate"
   }
   version: "1.0.2"
   license_type: NOTICE
