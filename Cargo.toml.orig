@@ -1,6 +1,6 @@
 [package]
 name = "proc-macro-error"
-version = "1.0.2"
+version = "1.0.4"
 authors = ["CreepySkeleton <creepy-skeleton@yandex.ru>"]
 description = "Almost drop-in replacement to panics in proc-macros"
 
@@ -22,14 +22,23 @@ targets = ["x86_64-unknown-linux-gnu"]
 [dependencies]
 quote = "1"
 proc-macro2 = "1"
-syn = { version = "1", default-features = false, features = ["derive", "parsing", "proc-macro", "printing"] }
-proc-macro-error-attr = { path = "./proc-macro-error-attr", version = "=1.0.2"}
+proc-macro-error-attr = { path = "./proc-macro-error-attr", version = "=1.0.4"}
+
+[dependencies.syn]
+version = "1"
+optional = true
+default-features = false
 
 [dev-dependencies]
 test-crate = { path = "./test-crate" }
 proc-macro-hack-test = { path = "./test-crate/proc-macro-hack-test" }
 trybuild = { version = "1.0.19", features = ["diff"] }
 toml = "=0.5.2" # DO NOT BUMP
+serde_derive = "=1.0.107" # DO NOT BUMP
 
 [build-dependencies]
 version_check = "0.9"
+
+[features]
+default = ["syn-error"]
+syn-error = ["syn"]
