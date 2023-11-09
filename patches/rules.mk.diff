@@ -1,0 +1,11 @@
+diff --git a/rules.mk b/rules.mk
+index 4f4804c..ff3d072 100644
+--- a/rules.mk
++++ b/rules.mk
+@@ -18,5 +18,6 @@ MODULE_LIBRARY_DEPS := \
+ 	external/rust/crates/proc-macro-error-attr \
+ 	external/rust/crates/proc-macro2 \
+ 	external/rust/crates/quote \
++	external/rust/crates/syn \
+ 
+ include make/library.mk
