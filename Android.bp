@@ -60,6 +60,4 @@ rust_library_host {
     ],
     proc_macros: ["libproc_macro_error_attr"],
     compile_multilib: "first",
-    product_available: true,
-    vendor_available: true,
 }
