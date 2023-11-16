@@ -1,0 +1,8 @@
+{
+  "package": {
+    "proc-macro-error": {
+      "device_supported": false,
+      "host_first_multilib": true
+    }
+  }
+}
